@@ -1,0 +1,83 @@
+{
+  "withdraw": 100,
+  "placeholder": false,
+  "swap": true,
+  "note": false,
+  "placeholders": [],
+  "bank": [
+    [
+      {
+        "id": 15707,
+        "amount": 1
+      },
+      {
+        "id": 995,
+        "amount": 500000
+      },
+      {
+        "id": 841,
+        "amount": 1
+      },
+      {
+        "id": 884,
+        "amount": 250
+      },
+      {
+        "id": 861,
+        "amount": 1
+      },
+      {
+        "id": 1323,
+        "amount": 1
+      },
+      {
+        "id": 1333,
+        "amount": 1
+      },
+      {
+        "id": 3105,
+        "amount": 1
+      },
+      {
+        "id": 1704,
+        "amount": 1
+      },
+      {
+        "id": 11118,
+        "amount": 1
+      },
+      {
+        "id": 556,
+        "amount": 1000
+      },
+      {
+        "id": 557,
+        "amount": 500
+      },
+      {
+        "id": 555,
+        "amount": 1000
+      },
+      {
+        "id": 558,
+        "amount": 250
+      },
+      {
+        "id": 554,
+        "amount": 500
+      },
+      {
+        "id": 562,
+        "amount": 50
+      },
+      {
+        "id": 8007,
+        "amount": 10
+      },
+      {
+        "id": 385,
+        "amount": 80
+      }
+    ]
+  ]
+}

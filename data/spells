@@ -1,0 +1,11 @@
+//Level req, experience, extra
+//Teleports
+//Home teleport
+0, 0.5
+
+
+//Combat
+//Level, exp, max hit, runes
+1, 2.7, 10, (556, 2)//Wind Rush
+1, 5.5, 20, (558, 1, 556 1)//Wind Strike
+3, 13, reduces attack by 5%

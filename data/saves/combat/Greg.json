@@ -1,0 +1,19 @@
+{
+  "effects": [],
+  "autocast": false,
+  "autocast-spell": -1,
+  "auto-retaliate": false,
+  "gravestone": 0,
+  "xp-locked": false,
+  "def-cast": false,
+  "veng-cast": false,
+  "last-veng": 11439136,
+  "player-kills": 0,
+  "player-killstreak": 0,
+  "player-deaths": 0,
+  "target-percentage": 0,
+  "bh-rank": -1,
+  "fight-type": "UNARMED_PUNCH",
+  "dfs-charges": 0,
+  "recoil-deg": 0
+}

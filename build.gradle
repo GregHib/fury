@@ -1,0 +1,110 @@
+group 'fury-server'
+version '1.0-SNAPSHOT'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.5.1'
+}
+
+buildscript {
+    ext.kotlin_version = '1.2.31'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'kotlin'
+apply plugin: 'application'
+mainClassName = "com.fury.Main"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version",
+            'io.netty:netty-all:4.1.21.Final',
+            'com.google.code.gson:gson:2.8.2',
+            'com.google.guava:guava:23.0',
+            'commons-io:commons-io:2.5',
+            'com.fasterxml.jackson.core:jackson-core:2.9.1',
+            'org.ogce:xpp3:1.1.6',
+            'org.apache.commons:commons-compress:1.14',
+            'org.reflections:reflections:0.9.10',
+            'com.fasterxml.jackson.core:jackson-core:2.9.1',
+            'com.dropbox.core:dropbox-core-sdk:3.0.4',
+            'fr.univ-valenciennes:bzip2:1.0',
+            'mysql:mysql-connector-java:6.0.6'
+    compile fileTree(dir: 'lib', include: '*.jar')
+    compile group: 'org.jetbrains.kotlin', name: 'kotlin-reflect', version: '1.2.31'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs 'src/main/java'
+        }
+    }
+    test {
+        java {
+            srcDirs 'src/main/test'
+        }
+    }
+}
+
+group 'fury'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.2.31'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'kotlin'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+kotlin {
+    experimental {
+        coroutines "enable"
+    }
+}

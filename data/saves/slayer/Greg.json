@@ -1,0 +1,23 @@
+{
+  "slayer-master": "TURAEL",
+  "task-max": 0,
+  "task-count": 0,
+  "tasks-completed": 0,
+  "double-slay-xp": false,
+  "slayer-learnt": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "slayer-removed": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}
